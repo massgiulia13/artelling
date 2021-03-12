@@ -72,3 +72,6 @@ for result in results["results"]["bindings"]: #si sta iterando nel risultato del
 
         else:
             print("Non ce n'è, non ce niente!")
+            
+            #il risultato è una roba vuota 
+#poi si deve serializzare 

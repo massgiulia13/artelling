@@ -29,7 +29,7 @@ PREFIX wdp: <http://www.wikidata.org/wiki/Property:>
 PREFIX art: <https://w3id.org/artchives/>
 SELECT DISTINCT ?coll ?collName ?artHistorian ?nameHistorian ?period ?periodLabel
 WHERE {
-  ?coll wdp:P170 ?artHistorian ;
+  ?coll wdt:P170 ?artHistorian ;
         rdfs:label ?collName ;
         art:hasSubjectPeriod ?period .
   ?artHistorian rdfs:label ?nameHistorian .
@@ -64,7 +64,7 @@ for result in results["results"]["bindings"]: #si sta iterando nel risultato del
                 periodLabel = result["periodLabel"]["value"]
             print(periodLabel + ":", period)
             #se ci stanno sia URI CHE LABEL DEL NOME nel grph
-            g.add((URIRef(coll) , URIRef(wdp.P170) , URIRef(artHistorian) ))
+            g.add((URIRef(coll) , URIRef(wdt.P170) , URIRef(artHistorian) ))
             g.add((URIRef(artHistorian) , RDFS.label , Literal(nameHistorian) ))
             g.add((URIRef(coll) , RDFS.label , Literal(collName) ))
             g.add((URIRef(coll) , URIRef(art.hasSubjectPeriod) , URIRef(period) ))

@@ -29,7 +29,7 @@ PREFIX wdp: <http://www.wikidata.org/wiki/Property:>
 PREFIX art: <https://w3id.org/artchives/>
 SELECT DISTINCT ?coll ?collName ?artHistorian ?nameHistorian ?period ?periodLabel
 WHERE {
-  ?coll wdp:P170 ?artHistorian ;
+  ?coll wdt:P170 ?artHistorian ;
         rdfs:label ?collName ;
         art:hasSubjectPeriod ?period .
   ?artHistorian rdfs:label ?nameHistorian .

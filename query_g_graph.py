@@ -1,5 +1,5 @@
 import rdflib
-import requests
+
 
 # create an empty Graph
 g = rdflib.ConjunctiveGraph()

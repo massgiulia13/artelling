@@ -74,3 +74,7 @@ for result in results["results"]["bindings"]:
 
 g.serialize(destination= r'C:\Users\diego\Desktop\dhdk_epds\resources\artchives_birthdates.nq', format='nquads')
 #it returns a record with all the curators and their birthplaces, but with a lot of repetitions
+#g.serialize(destination= r'C:\Users\Giulia\Desktop\tutorial\artchives1_birthdates.json', format='nquads')
+#g.serialize(destination= r'C:\Users\Giulia\Desktop\tutorial\artchives1_birthdates.nq', format='nquads')
+#it returns a record with all the curators and their birthplaces, but with a lot of repetitions
+#posso serializzarlo come json o come csv così posso provare a creare un dataframe!!! METTO SU GITHUB ARTICHIVES1_BIRTHDATES.JSON E .CSV, COSì POTETE IMPORTARLI E LAVORARCI

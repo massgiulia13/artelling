@@ -15,7 +15,7 @@ wikidata_endpoint = "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
 g = rdflib.ConjunctiveGraph()
 
 # parse a local RDF file by specifying the format into the graph
-result = g.parse(r"C:\Users\diego\Desktop\dhdk_epds\resources\artchives.nq", format='nquads')
+result = g.parse("artchives.nq", format='nquads')
 
 wd = Namespace("http://www.wikidata.org/entity/") # remember that a prefix matches a URI until the last slash (or hashtag #)
 wdt = Namespace("http://www.wikidata.org/prop/direct/")

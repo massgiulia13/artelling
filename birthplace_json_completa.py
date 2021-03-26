@@ -44,6 +44,7 @@ WHERE {
                rdfs:label ?historian_name . 
     ?birthplace rdfs:label ?birthplace_label .
     FILTER (langMatches(lang(?birthplace_label), "EN"))
+    FILTER (langMatches(lang(?historian_name), "EN"))
     } 
 """
 # set the endpoint 
@@ -61,43 +62,32 @@ results = sparql_wd.query().convert()
 #for result in results["results"]["bindings"]:
     #print(result)
     
-    
+import os.path  
 import pandas as pd
 import json
 import pprint
 
-with open("data_query_birthplaces.json", "w") as write_file:
-    json.dump(results, write_file)
+#with open("data_query_birthplaces_a.json", "w") as write_file:
+    #json.dump(results, write_file)
     
-with open("data_query_birthplaces.json", "r") as read_file:
+#with open("data_query_birthplaces_a.json", "r") as read_file:
+    #data = json.load(read_file)
+    #pprint.pprint(data)
+    
+save_path = r'C:\Users\Giulia\Desktop\tutorial'
+
+name_of_file = 'data_query_birthplaces_a'
+
+completeName = os.path.join(save_path, name_of_file+'.json')         
+
+
+with open(completeName, "w")as write_file:
+          json.dump(results, write_file)
+
+with open("data_query_birthplaces_a.json", "r") as read_file:
     data = json.load(read_file)
     pprint.pprint(data)
     
+#output=il file json nella directory che vuoi, metto tutto su github
 
-#df = pd.read_json('data_query_birthplaces.json')
-#pprint.pprint(df) con pandas fa cacare la viz
 
-#il json funziona, è un po' bruttino ma funziona 
-
-#ho provato a trasformare il json in csv ma non ci riesco molto 
-
-#settato il formato: sparql_wd.setReturnFormat(CSV)
-
-#mi dà errori diversi, tra i quali "not enough values to unpack"
-#import csv
-#import pandas as pd
-
-#with open('data_query_birthplaces.csv', mode='w') as my_file:
-    #my_writer = csv.writer(my_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
-    # write the column names
-    #my_writer.writerow(["historian", "historian_name", "birthplace", "birthplace_label"])
-    
-    # access the rows of the query results
-    #for historian, historian_name, birthplace, birthplace_label in birthplace_query:
-        # write in the csv
-        #my_writer.writerow([historian, historian_name, birthplace, birthplace_label])
-        
-# parse the csv into a dataframe
-#data = pd.read_csv("data_query_birthplaces.csv", encoding = 'Latin-1')
-# print the first 5 rows
-#data.head()

@@ -73,6 +73,6 @@ for result in results["results"]["bindings"]:
 
 
 
-g.serialize(destination= r'C:\Users\Giulia\Desktop\tutorial\artchives3_birthplaces.nq', format='nquads') #su questo artchives3 sono serializzate le proprietà birthplacesp19
+g.serialize(destination= r'C:\\Desktop\\artchives3_birthplaces.nq', format='nquads') #su questo artchives3 sono serializzate le proprietà birthplacesp19
 #lo carico qua su github 
 

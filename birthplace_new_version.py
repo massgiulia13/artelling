@@ -23,11 +23,11 @@ birthplaces = ' '.join(birthplaces_list) #così unisci tutti i risultati
 
 #print(birthplaces)
 
-arthistorians_list = set() #crei il set così non ci sono le ripetizioni
+#arthistorians_list = set() #crei il set così non ci sono le ripetizioni
 
-for s,p,o in g.triples((None, wdt.P170, None)):
-    if "www.wikidata.org/entity/" in str(o):
-        arthistorians_list.add("<" +str(o) + ">")
+#for s,p,o in g.triples((None, wdt.P170, None)):
+    #if "www.wikidata.org/entity/" in str(o):
+        #arthistorians_list.add("<" +str(o) + ">")
         
 #print(arthistorians_list) questo ce lo dà come set, con risultati separate da virgole#include the variable in the query string
 
@@ -35,9 +35,10 @@ arthistorians = ' '.join(arthistorians_list) #così unisci tutti i risultati
 
 query_birthplaces = g.query("""
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-SELECT DISTINCT  ?historian ?historian_label ?birthplace ?birthplace_label 
-WHERE {
-   VALUES ?birthplaces {"""+birthplaces+"""} ?historian {"""+arthistorians+"""} .  
+SELECT DISTINCT  ?historian ?historian_label ?birthplace ?birthplace_label ?coll
+WHERE { 
+   VALUES ?birthplaces {"""+birthplaces+"""} .
+   ?coll wdt:P170 ?artHistorian .
    ?birthplace rdfs:label ?birthplace_label .
    ?historian rdfs:label ?historian_label .
    
@@ -46,19 +47,19 @@ WHERE {
    FILTER (langMatches(lang(?historian_label), "EN"))
    }
 """)
-#LA QUERY E' GIUSTA! #hai importato i set dei birthplaces e degli arthistorians, e cerchi i labels 
+#LA QUERY E' GIUSTA! #hai importato i set dei birthplaces e (avevo provato a importare anche il set degli arthistorians ma non funziona), e cerchi i labels 
 
 
 import csv
 with open('birthplaces_creators.csv', mode='w') as my_file:
     my_writer = csv.writer(my_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
     # write the column names
-    my_writer.writerow(["historian", "historian_label", "birthplace", "birthplace_label"])
+    my_writer.writerow(["historian", "historian_label", "birthplace", "birthplace_label", "coll"])
     
     # access the rows of the query results
     for historian, historian_label, birthplace, birthplace_label, coll in query_birthplaces:
         # write in the csv
-        my_writer.writerow([historian, historian_label, birthplace, birthplace_label])
+        my_writer.writerow([historian, historian_label, birthplace, birthplace_label, coll])
         
 
 import pandas as pd

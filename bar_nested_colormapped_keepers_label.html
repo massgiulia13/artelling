@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.0.min.js" integrity="sha384-HjagQp6T0/7bxYTAXbLotF1MLAGWmhkY5siA1Gc/pcEgvgRPtMsRn0gQtMwGKiw1" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="c03dae33-8928-4cc1-930c-20318c3b3e86" data-root-id="4615"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="4729">
+          {"cb9904cb-8a9a-49d6-a55e-d5cc2ea91d6e":{"defs":[{"extends":null,"module":null,"name":"DataModel","overrides":[],"properties":[]}],"roots":{"references":[{"attributes":{"end":2,"factors":["neoclassicism","mannerism","16th century","modern art","middle ages","renaissance","baroque","17th century","18th century","14th century","15th century","cold war","early christian art and architecture","byzantine art","19th century","romanticism"],"palette":["#6882BB","#14D51C","#F64381","#CCBE90","#1976A5","#F3279F","#EFC93D","#54353A","#7174B9","#0E7545","#874E2F","#993257","#584DD2","#A8C6A6","#5F9E6D","#E9D2C0"],"start":1},"id":"4633","type":"CategoricalColorMapper"},{"attributes":{},"id":"4645","type":"AllLabels"},{"attributes":{"active_multi":null},"id":"4632","type":"Toolbar"},{"attributes":{"formatter":{"id":"4641"},"major_label_policy":{"id":"4642"},"ticker":{"id":"4629"}},"id":"4628","type":"LinearAxis"},{"attributes":{"start":0},"id":"4619","type":"DataRange1d"},{"attributes":{"data_source":{"id":"4613"},"glyph":{"id":"4635"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4636"},"view":{"id":"4638"}},"id":"4637","type":"GlyphRenderer"},{"attributes":{"text":"Period Counts by Institute"},"id":"4616","type":"Title"},{"attributes":{},"id":"4644","type":"CategoricalTickFormatter"},{"attributes":{},"id":"4641","type":"BasicTickFormatter"},{"attributes":{},"id":"4626","type":"CategoricalTicker"},{"attributes":{"fill_color":{"field":"x","transform":{"id":"4633"}},"line_color":{"value":"white"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"x"}},"id":"4635","type":"VBar"},{"attributes":{},"id":"4629","type":"BasicTicker"},{"attributes":{},"id":"4646","type":"Selection"},{"attributes":{"axis":{"id":"4625"},"grid_line_color":null,"ticker":null},"id":"4627","type":"Grid"},{"attributes":{},"id":"4647","type":"UnionRenderers"},{"attributes":{"axis":{"id":"4628"},"dimension":1,"ticker":null},"id":"4631","type":"Grid"},{"attributes":{},"id":"4623","type":"LinearScale"},{"attributes":{"source":{"id":"4613"}},"id":"4638","type":"CDSView"},{"attributes":{"formatter":{"id":"4644"},"major_label_orientation":1.55,"major_label_policy":{"id":"4645"},"ticker":{"id":"4626"}},"id":"4625","type":"CategoricalAxis"},{"attributes":{"factors":[["Kunsthistorisches Institut in Florenz","neoclassicism"],["Kunsthistorisches Institut in Florenz","mannerism"],["Kunsthistorisches Institut in Florenz","16th century"],["Kunsthistorisches Institut in Florenz","modern art"],["Kunsthistorisches Institut in Florenz","middle ages"],["Kunsthistorisches Institut in Florenz","renaissance"],["Kunsthistorisches Institut in Florenz","baroque"],["Kunsthistorisches Institut in Florenz","17th century"],["Kunsthistorisches Institut in Florenz","18th century"],["Kunsthistorisches Institut in Florenz","14th century"],["Kunsthistorisches Institut in Florenz","15th century"],["Kunsthistorisches Institut in Florenz","cold war"],["Kunsthistorisches Institut in Florenz","early christian art and architecture"],["Kunsthistorisches Institut in Florenz","byzantine art"],["Kunsthistorisches Institut in Florenz","19th century"],["Kunsthistorisches Institut in Florenz","romanticism"],["Bibliotheca Hertziana ","neoclassicism"],["Bibliotheca Hertziana ","mannerism"],["Bibliotheca Hertziana ","16th century"],["Bibliotheca Hertziana ","modern art"],["Bibliotheca Hertziana ","middle ages"],["Bibliotheca Hertziana ","renaissance"],["Bibliotheca Hertziana ","baroque"],["Bibliotheca Hertziana ","17th century"],["Bibliotheca Hertziana ","18th century"],["Bibliotheca Hertziana ","14th century"],["Bibliotheca Hertziana ","15th century"],["Bibliotheca Hertziana ","cold war"],["Bibliotheca Hertziana ","early christian art and architecture"],["Bibliotheca Hertziana ","byzantine art"],["Bibliotheca Hertziana ","19th century"],["Bibliotheca Hertziana ","romanticism"],["Scuola Normale Superiore","neoclassicism"],["Scuola Normale Superiore","mannerism"],["Scuola Normale Superiore","16th century"],["Scuola Normale Superiore","modern art"],["Scuola Normale Superiore","middle ages"],["Scuola Normale Superiore","renaissance"],["Scuola Normale Superiore","baroque"],["Scuola Normale Superiore","17th century"],["Scuola Normale Superiore","18th century"],["Scuola Normale Superiore","14th century"],["Scuola Normale Superiore","15th century"],["Scuola Normale Superiore","cold war"],["Scuola Normale Superiore","early christian art and architecture"],["Scuola Normale Superiore","byzantine art"],["Scuola Normale Superiore","19th century"],["Scuola Normale Superiore","romanticism"],["Fondazione Federico Zeri","neoclassicism"],["Fondazione Federico Zeri","mannerism"],["Fondazione Federico Zeri","16th century"],["Fondazione Federico Zeri","modern art"],["Fondazione Federico Zeri","middle ages"],["Fondazione Federico Zeri","renaissance"],["Fondazione Federico Zeri","baroque"],["Fondazione Federico Zeri","17th century"],["Fondazione Federico Zeri","18th century"],["Fondazione Federico Zeri","14th century"],["Fondazione Federico Zeri","15th century"],["Fondazione Federico Zeri","cold war"],["Fondazione Federico Zeri","early christian art and architecture"],["Fondazione Federico Zeri","byzantine art"],["Fondazione Federico Zeri","19th century"],["Fondazione Federico Zeri","romanticism"],["Getty research institute","neoclassicism"],["Getty research institute","mannerism"],["Getty research institute","16th century"],["Getty research institute","modern art"],["Getty research institute","middle ages"],["Getty research institute","renaissance"],["Getty research institute","baroque"],["Getty research institute","17th century"],["Getty research institute","18th century"],["Getty research institute","14th century"],["Getty research institute","15th century"],["Getty research institute","cold war"],["Getty research institute","early christian art and architecture"],["Getty research institute","byzantine art"],["Getty research institute","19th century"],["Getty research institute","romanticism"]],"range_padding":0.1},"id":"4614","type":"FactorRange"},{"attributes":{"below":[{"id":"4625"}],"center":[{"id":"4627"},{"id":"4631"}],"height":650,"left":[{"id":"4628"}],"renderers":[{"id":"4637"}],"title":{"id":"4616"},"toolbar":{"id":"4632"},"toolbar_location":null,"width":1500,"x_range":{"id":"4614"},"x_scale":{"id":"4621"},"y_range":{"id":"4619"},"y_scale":{"id":"4623"}},"id":"4615","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"4621","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"field":"x","transform":{"id":"4633"}},"line_alpha":{"value":0.1},"line_color":{"value":"white"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"x"}},"id":"4636","type":"VBar"},{"attributes":{},"id":"4642","type":"AllLabels"},{"attributes":{"data":{"counts":[16.0,48.0,72.0,8.0,48.0,88.0,88.0,56.0,24.0,8.0,56.0,8.0,16.0,32.0,8.0,8.0,8.0,24.0,36.0,4.0,24.0,44.0,44.0,28.0,12.0,4.0,28.0,4.0,8.0,16.0,4.0,4.0,2.0,6.0,9.0,1.0,6.0,11.0,11.0,7.0,3.0,1.0,7.0,1.0,2.0,4.0,1.0,1.0,2.0,6.0,9.0,1.0,6.0,11.0,11.0,7.0,3.0,1.0,7.0,1.0,2.0,4.0,1.0,1.0,16.0,48.0,72.0,8.0,48.0,88.0,88.0,56.0,24.0,8.0,56.0,8.0,16.0,32.0,8.0,8.0],"x":[["Kunsthistorisches Institut in Florenz","neoclassicism"],["Kunsthistorisches Institut in Florenz","mannerism"],["Kunsthistorisches Institut in Florenz","16th century"],["Kunsthistorisches Institut in Florenz","modern art"],["Kunsthistorisches Institut in Florenz","middle ages"],["Kunsthistorisches Institut in Florenz","renaissance"],["Kunsthistorisches Institut in Florenz","baroque"],["Kunsthistorisches Institut in Florenz","17th century"],["Kunsthistorisches Institut in Florenz","18th century"],["Kunsthistorisches Institut in Florenz","14th century"],["Kunsthistorisches Institut in Florenz","15th century"],["Kunsthistorisches Institut in Florenz","cold war"],["Kunsthistorisches Institut in Florenz","early christian art and architecture"],["Kunsthistorisches Institut in Florenz","byzantine art"],["Kunsthistorisches Institut in Florenz","19th century"],["Kunsthistorisches Institut in Florenz","romanticism"],["Bibliotheca Hertziana ","neoclassicism"],["Bibliotheca Hertziana ","mannerism"],["Bibliotheca Hertziana ","16th century"],["Bibliotheca Hertziana ","modern art"],["Bibliotheca Hertziana ","middle ages"],["Bibliotheca Hertziana ","renaissance"],["Bibliotheca Hertziana ","baroque"],["Bibliotheca Hertziana ","17th century"],["Bibliotheca Hertziana ","18th century"],["Bibliotheca Hertziana ","14th century"],["Bibliotheca Hertziana ","15th century"],["Bibliotheca Hertziana ","cold war"],["Bibliotheca Hertziana ","early christian art and architecture"],["Bibliotheca Hertziana ","byzantine art"],["Bibliotheca Hertziana ","19th century"],["Bibliotheca Hertziana ","romanticism"],["Scuola Normale Superiore","neoclassicism"],["Scuola Normale Superiore","mannerism"],["Scuola Normale Superiore","16th century"],["Scuola Normale Superiore","modern art"],["Scuola Normale Superiore","middle ages"],["Scuola Normale Superiore","renaissance"],["Scuola Normale Superiore","baroque"],["Scuola Normale Superiore","17th century"],["Scuola Normale Superiore","18th century"],["Scuola Normale Superiore","14th century"],["Scuola Normale Superiore","15th century"],["Scuola Normale Superiore","cold war"],["Scuola Normale Superiore","early christian art and architecture"],["Scuola Normale Superiore","byzantine art"],["Scuola Normale Superiore","19th century"],["Scuola Normale Superiore","romanticism"],["Fondazione Federico Zeri","neoclassicism"],["Fondazione Federico Zeri","mannerism"],["Fondazione Federico Zeri","16th century"],["Fondazione Federico Zeri","modern art"],["Fondazione Federico Zeri","middle ages"],["Fondazione Federico Zeri","renaissance"],["Fondazione Federico Zeri","baroque"],["Fondazione Federico Zeri","17th century"],["Fondazione Federico Zeri","18th century"],["Fondazione Federico Zeri","14th century"],["Fondazione Federico Zeri","15th century"],["Fondazione Federico Zeri","cold war"],["Fondazione Federico Zeri","early christian art and architecture"],["Fondazione Federico Zeri","byzantine art"],["Fondazione Federico Zeri","19th century"],["Fondazione Federico Zeri","romanticism"],["Getty research institute","neoclassicism"],["Getty research institute","mannerism"],["Getty research institute","16th century"],["Getty research institute","modern art"],["Getty research institute","middle ages"],["Getty research institute","renaissance"],["Getty research institute","baroque"],["Getty research institute","17th century"],["Getty research institute","18th century"],["Getty research institute","14th century"],["Getty research institute","15th century"],["Getty research institute","cold war"],["Getty research institute","early christian art and architecture"],["Getty research institute","byzantine art"],["Getty research institute","19th century"],["Getty research institute","romanticism"]]},"selected":{"id":"4646"},"selection_policy":{"id":"4647"}},"id":"4613","type":"ColumnDataSource"}],"root_ids":["4615"]},"title":"Bokeh Application","version":"2.3.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('4729').textContent;
+                  var render_items = [{"docid":"cb9904cb-8a9a-49d6-a55e-d5cc2ea91d6e","root_ids":["4615"],"roots":{"4615":"c03dae33-8928-4cc1-930c-20318c3b3e86"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.2.min.js" integrity="sha384-XypntL49z55iwGVUW4qsEu83zKL3XEcz0MjuGOQ9SlaaQ68X/g+k1FcioZi7oQAc" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="ce1cc845-2640-428e-9582-8106dc1a9e78" data-root-id="7276"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="7407">
+          {"26c9b253-69d4-49e0-ac61-b0b4ddb17941":{"defs":[],"roots":{"references":[{"attributes":{"axis_label":null,"axis_label_standoff":10,"axis_label_text_color":"#E0E0E0","axis_label_text_font":"Helvetica","axis_label_text_font_size":"1.25em","axis_label_text_font_style":"normal","axis_line_alpha":0,"axis_line_color":"#E0E0E0","formatter":{"id":"7311"},"major_label_policy":{"id":"7312"},"major_label_text_color":"#E0E0E0","major_label_text_font":"Helvetica","major_label_text_font_size":"1.025em","major_tick_line_alpha":0,"major_tick_line_color":"#E0E0E0","minor_tick_line_alpha":0,"minor_tick_line_color":"#E0E0E0","ticker":{"id":"7288"},"visible":false},"id":"7287","type":"LinearAxis"},{"attributes":{"source":{"id":"7300"}},"id":"7305","type":"CDSView"},{"attributes":{},"id":"7281","type":"DataRange1d"},{"attributes":{"text":"Number of Institutes per Countries","text_color":"#E0E0E0","text_font":"Helvetica","text_font_size":"1.15em"},"id":"7277","type":"Title"},{"attributes":{"end_angle":{"expr":{"id":"7299"}},"fill_color":{"field":"color"},"line_color":{"value":"white"},"radius":{"value":0.4},"start_angle":{"expr":{"id":"7298"}},"x":{"value":0},"y":{"value":1}},"id":"7302","type":"Wedge"},{"attributes":{},"id":"7285","type":"LinearScale"},{"attributes":{},"id":"7308","type":"BasicTickFormatter"},{"attributes":{},"id":"7313","type":"Selection"},{"attributes":{"end_angle":{"expr":{"id":"7299"}},"fill_alpha":{"value":0.1},"fill_color":{"field":"color"},"line_alpha":{"value":0.1},"line_color":{"value":"white"},"radius":{"value":0.4},"start_angle":{"expr":{"id":"7298"}},"x":{"value":0},"y":{"value":1}},"id":"7303","type":"Wedge"},{"attributes":{},"id":"7314","type":"UnionRenderers"},{"attributes":{"active_multi":null,"tools":[{"id":"7295"}]},"id":"7296","type":"Toolbar"},{"attributes":{},"id":"7283","type":"LinearScale"},{"attributes":{},"id":"7288","type":"BasicTicker"},{"attributes":{"callback":null,"tooltips":"@nameCountry: @value"},"id":"7295","type":"HoverTool"},{"attributes":{"axis":{"id":"7287"},"grid_line_alpha":0.25,"grid_line_color":null,"ticker":null},"id":"7290","type":"Grid"},{"attributes":{},"id":"7309","type":"AllLabels"},{"attributes":{"background_fill_alpha":0.25,"background_fill_color":"#20262B","border_line_alpha":0,"glyph_width":15,"items":[{"id":"7316"}],"label_standoff":8,"label_text_color":"#E0E0E0","label_text_font":"Helvetica","label_text_font_size":"1.025em","spacing":8},"id":"7315","type":"Legend"},{"attributes":{"axis":{"id":"7291"},"dimension":1,"grid_line_alpha":0.25,"grid_line_color":null,"ticker":null},"id":"7294","type":"Grid"},{"attributes":{"field":"angle"},"id":"7299","type":"CumSum"},{"attributes":{"label":{"field":"nameCountry"},"renderers":[{"id":"7304"}]},"id":"7316","type":"LegendItem"},{"attributes":{},"id":"7312","type":"AllLabels"},{"attributes":{"data":{"angle":{"__ndarray__":"4PCcdi8bFEDg8Jx2Lxv0Pw==","dtype":"float64","order":"little","shape":[2]},"color":["#1D8B2B","#EBDF5F"],"index":[0,1],"nameCountry":["Italy","United States of America"],"value":[4,1]},"selected":{"id":"7313"},"selection_policy":{"id":"7314"}},"id":"7300","type":"ColumnDataSource"},{"attributes":{"axis_label":null,"axis_label_standoff":10,"axis_label_text_color":"#E0E0E0","axis_label_text_font":"Helvetica","axis_label_text_font_size":"1.25em","axis_label_text_font_style":"normal","axis_line_alpha":0,"axis_line_color":"#E0E0E0","formatter":{"id":"7308"},"major_label_policy":{"id":"7309"},"major_label_text_color":"#E0E0E0","major_label_text_font":"Helvetica","major_label_text_font_size":"1.025em","major_tick_line_alpha":0,"major_tick_line_color":"#E0E0E0","minor_tick_line_alpha":0,"minor_tick_line_color":"#E0E0E0","ticker":{"id":"7292"},"visible":false},"id":"7291","type":"LinearAxis"},{"attributes":{},"id":"7311","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"7300"},"glyph":{"id":"7302"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"7303"},"view":{"id":"7305"}},"id":"7304","type":"GlyphRenderer"},{"attributes":{"field":"angle","include_zero":true},"id":"7298","type":"CumSum"},{"attributes":{},"id":"7292","type":"BasicTicker"},{"attributes":{"background_fill_color":"#20262B","below":[{"id":"7287"}],"border_fill_color":"#15191C","center":[{"id":"7290"},{"id":"7294"},{"id":"7315"}],"height":700,"left":[{"id":"7291"}],"outline_line_alpha":0.25,"outline_line_color":"#E0E0E0","renderers":[{"id":"7304"}],"title":{"id":"7277"},"toolbar":{"id":"7296"},"toolbar_location":null,"x_range":{"id":"7279"},"x_scale":{"id":"7283"},"y_range":{"id":"7281"},"y_scale":{"id":"7285"}},"id":"7276","subtype":"Figure","type":"Plot"},{"attributes":{"start":-0.5},"id":"7279","type":"Range1d"}],"root_ids":["7276"]},"title":"Bokeh Application","version":"2.3.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('7407').textContent;
+                  var render_items = [{"docid":"26c9b253-69d4-49e0-ac61-b0b4ddb17941","root_ids":["7276"],"roots":{"7276":"ce1cc845-2640-428e-9582-8106dc1a9e78"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

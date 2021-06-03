@@ -30,7 +30,10 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
-
+    <!--Animation on scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Pulse animations-->
+    <link rel="stylesheet" href="woah.css">
 </head>
 
 <body id="page-top">
@@ -65,7 +68,6 @@
                 <div class="w-100 text-white">
                     <h1 class="display-3">GEOSTORY</h1>
                     <p>A Geospacial Analysis of the Passions of Art Historians</p>
-                    <!--BUTTON-->
                     <button type="button" class="btn btn-outline-light" data-mdb-ripple-color="dark" href="#about">
                         Start the virtual journey</button>
                 </div>
@@ -75,17 +77,22 @@
     <!--about/Introduction-->
     <section class="about-section text-center" id="about">
         <div class="container px-4 px-lg-5">
+
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8">
-                    <h2 class="text-white mb-4">Introduction</h2>
+                    <div data-aos="fade-in">
+                        <h2 class="text-white mb-4">Introduction</h2>
+                    <div data-aos="fade-in">
                     <h3 class="text-white-50"><i>“Travel is about the gorgeous feeling of teetering in the unknown.”</i>-Anthony Bourdain</h3>
                     <hr>
+                    <div data-aos="fade-in">
                     <h4 class="text-white-50">
                     GEOSTORY is a geospatial analysis of the digital archive <a
                         href="http://artchives.fondazionezeri.unibo.it">Artchives</a> with the aim of exploring
                     relationships between the <i>country of birth</i> and <i>citizenship</i> of art historians and the
                     location of collections from a distributional point of view.</h4>
                     <hr>
+                    <div data-aos="fade-in">
                     <h4 class="text-white-50">
                         Art history is a discipline highly affected by
                         the cultural background of the artistic periods,
@@ -98,19 +105,23 @@
                         for instance that:
                     </h4>
                     <hr>
+                <div data-aos="fade-in">
                     <h5 style="color: #fff;">
                         Italy is a country
                         with a rich cultural and artistic heritage and the majority of cultural institutions and
                         collections
                         can be found there. However, the majority of art historians are from Germany.</h5>
                     <hr>
+                </div>
                     <!--Examples for curiousity-->
-                    <section class="py-5">
+                <section class="py-5">
+                    <div data-aos="fade-in">
                         <div class="container text-center">
                             <h2 class="mb-4">Explore the page to enrich your research</h2>
                             <p class="lead mb-5">For facilitating research in art history, researchers might be
                                 interested in:</p>
-                            <div>
+                            </div>
+                            <div data-aos="fade-in">
                                 <div class="row align-items-left text-md-left mb-5"
                                     style="flex-direction: row; flex-wrap: nowrap">
                                     <div class="col-md-6 order-1 order-md-0"><img class="img-fluid" src="" alt=""></div>
@@ -120,6 +131,7 @@
                                         <p>Find the institute where a collection of interest is held.</p>
                                     </div>
                                 </div>
+                                <div data-aos="fade-in">
                                 <div class="row align-items-center text-md-right mb-5">
                                     <div class="col-md-6 order-1"><img class="img-fluid" src="" alt=""></div>
                                     <div class="col-md-6 mb-4 mb-md-0 order-0">
@@ -128,6 +140,7 @@
                                         <p>Explore where an artistic period is studied the most.</p>
                                     </div>
                                 </div>
+                                <div data-aos="fade-in">
                                 <div class="row align-items-center text-md-left mb-5"
                                     style="flex-direction: row; flex-wrap: nowrap">
                                     <div class="col-md-6 order-1 order-md-0"><img class="img-fluid"
@@ -138,6 +151,7 @@
                                         <p>Discover the most researched and the lesser studied artistic periods.</p>
                                     </div>
                                 </div>
+                                <div data-aos="fade-in">
                                 <div class="row align-items-center text-md-left mb-5">
                                     <div class="col-md-6 order-1 order-md-0"><img class="img-fluid"
                                             src="placeholder/pictures/bg_16-9.svg?primary=007bff" alt=""></div>
@@ -148,12 +162,13 @@
                                             their studied artistic periods.</p>
                                     </div>
                                 </div>
+                                <div data-aos="fade-in">
                                 <p class="white-text-50">The team of Artelling invites you to explore our data in this
                                     visual journey!</p>
-
                             </div>
                             <!--BUTTON-->
-                            <button type="button-lg" class="btn btn-outline-white" data-mdb-ripple-color="bg-white"
+                            <div data-aos="fade-in">
+                            <button type="button-lg" class="btn btn-outline-white woah pulse infinite" data-mdb-ripple-color="bg-white"
                                 href="#projects">
                                 Let's begin!</button>
 
@@ -165,6 +180,7 @@
     </div>
     </section>
     <!-- BUTTONS JOURNEY-->
+    <div data-aos="fade-in">
     <div class="row justify-content-center">
         <div class="btn-group shadow-0" role="group" aria-label="Basic example" id="projects">
             <button type="button" class="btn btn-outline-dark" data-mdb-color="dark" id="">
@@ -181,15 +197,17 @@
             </button>
         </div>
     </div>
-    <!-- FIRST MAP-->
+    <!-- FIRST DESTINATION-->
     <section class="col-lg-12" align="center">
         <section class="projects-section bg-light" id="map_birth" align="center">
+            <div data-aos="fade-in">
             <div class="container px-4 px-lg-5" align="center">
                 <div class="featured-text text-center text-lg-left">
                     <h4>birthplace map</h4>
                     <p class="text-black-50 mb-0">adapted from Lucia's</p>
                 </div>
                 <div class="container px-4 px-lg-5" align="center">
+                    <div data-aos="fade-in">
                     <div id="mapid" align="center" style="height: 400px; width: 500px;">
                         div class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab
                         leaflet-touch-drag leaflet-touch-zoom"
@@ -673,6 +691,7 @@
             <div class="flourish-embed flourish-map" data-src="visualisation/6312042" align="center">
                 <script src="https://public.flourish.studio/resources/embed.js"></script>
             </div>
+        </div>
             <!--Team-->
             <section class="contacts-section bg-light">
                 <div class="container px-4 px-lg-5" align="center">
@@ -682,7 +701,7 @@
                         </div>
                     </div>
                 </div>
-        </div>
+        <div data-aos="fade-in">
         <div class="row text-center">
             <!-- Team item -->
             <div class="col-xl-4 col-sm-6 mb-5" align="center">
@@ -725,6 +744,8 @@
             </div><!-- End -->
 
             <!-- Team item -->
+            <div data-aos="fade-in">
+                <div class="row text-center">
             <div class="col-xl-4 col-sm-6 mb-5" align="center">
                 <div class="bg-white rounded shadow-sm py-5 px-4"><img
                         src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg" alt=""
@@ -768,6 +789,7 @@
         <!-- Signup-->
         <section class="signup-section" id="signup">
             <div class="container px-4 px-lg-5">
+                <div data-aos="fade-in">
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
@@ -781,6 +803,7 @@
         <section class="contact-section bg-black">
             <div class="card-deck">
                 <div class="container px-4 px-lg-6">
+                    <div data-aos="fade-in">
                     <div class="row gx-8 gx-lg-6">
                       <!---        <div class="col-lg-3 mb-3">
                             <div class="card py-4 h-100">
@@ -798,6 +821,8 @@
                         </div>-->
                         <!--license-->
                         <div class="col-lg-6 mb-3">
+                            <div data-aos="fade-in">
+                            <div class="row gx-8 gx-lg-6">
                             <div class="card py-4 h-100" align="center">
                                 <div class="card-body text-center">
                                     <i class="fas fa-shield-alt text-primary mb-2"></i>
@@ -819,8 +844,10 @@
                             </div>
                         </div>
                         <!--social-->
+                        <div data-aos="fade-in">
+                        <div class="row gx-8 gx-lg-6">
                             <div class="col-lg-6 mb-3">
-                                <div class="card py-4 h-100">
+                                <div class="card py-4 h-100" align="center">
                                     <div class="card-body text-center" align="center">
                                         <i class="fas fa-comment-alt text-primary mb-1"></i>
                                         <h4 class="text-uppercase m-0">Social</h4>
@@ -833,7 +860,6 @@
                                             <li><a class="btn btn-block btn-social btn-linkedin"
                                                     href="https://www.linkedin.com/school/unibo/">
                                                     <span class="fa fa-linkedin"></span> UniBO on Linkedin</a></li>
-
                                             <br>
                                             <li><a class="btn btn-block btn-social btn-google"
                                                     href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge/">
@@ -852,6 +878,11 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!--Animation on scroll-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

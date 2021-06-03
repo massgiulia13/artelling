@@ -7282,6 +7282,8 @@ textarea.form-control-lg {
 .py-4 {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
+  position: relative;
+  left: 50%;
 }
 
 .py-5 {
@@ -7651,6 +7653,8 @@ textarea.form-control-lg {
 
 .rounded {
   border-radius: 0.25rem !important;
+  position: relative;
+  left:50%;
 }
 
 .rounded-0 {

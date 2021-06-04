@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.2.min.js" integrity="sha384-XypntL49z55iwGVUW4qsEu83zKL3XEcz0MjuGOQ9SlaaQ68X/g+k1FcioZi7oQAc" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="a995cf24-9bf0-44ae-a902-4fafd2e5c349" data-root-id="56201"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="56332">
+          {"4f08dc29-d525-493b-8721-549f863ab2b8":{"defs":[],"roots":{"references":[{"attributes":{"text":"Number of studied Periods per Historian","text_color":"#E0E0E0","text_font":"Helvetica","text_font_size":"1.15em"},"id":"56202","type":"Title"},{"attributes":{"label":{"field":"Historians"},"renderers":[{"id":"56229"}]},"id":"56241","type":"LegendItem"},{"attributes":{"end_angle":{"expr":{"id":"56224"}},"fill_color":{"field":"color"},"line_color":{"value":"white"},"radius":{"value":0.4},"start_angle":{"expr":{"id":"56223"}},"x":{"value":0},"y":{"value":1}},"id":"56227","type":"Wedge"},{"attributes":{"data_source":{"id":"56225"},"glyph":{"id":"56227"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"56228"},"view":{"id":"56230"}},"id":"56229","type":"GlyphRenderer"},{"attributes":{"data":{"Historians":["Ernst Kitzinger","Gustav Ludwig","Korn\u00e9l Fabriczy","Richard Krautheimer","Ellis Waterhouse","Everett Fahy","Kurt Badt","Luisa Vertova","Luigi Salerno","Julius S. Held","John Pope-Hennessy","Julian Kliemann","Aby Warburg","Werner Cohn","Leo Steinberg","Ernst Steinmann","Stefano Tumidei","Ulrich Middeldorf","Fritz Heinemann","Wolfgang Lotz","Otto Lehmann-Brockhaus","Federico Zeri"],"angle":{"__ndarray__":"F2q1b5ZVzz+7Rs6fuePEP7tGzp+549Q/u0bOn7nj1D+7Rs6fuePEP7tGzp+549Q/u0bOn7nj1D+7Rs6fuePkPxdqtW+WVc8/u0bOn7njxD+7Rs6fuePEPxdqtW+WVd8/u0bOn7njtD+7Rs6fuePEP7tGzp+548Q/u0bOn7njtD/jfdRrQkfiP7tGzp+548Q/F2q1b5ZV3z+7Rs6fuePUP7tGzp+547Q/433Ua0JH4j8=","dtype":"float64","order":"little","shape":[22]},"color":["#C1DC2B","#C498CD","#D77D68","#156356","#8E3346","#8F7498","#F87BD5","#7CAA68","#E0BD30","#44A121","#FDAB2D","#30E193","#FB12B7","#D7CCAD","#5EFFAA","#967D4F","#1978EF","#8B37F1","#9D0EFA","#2B7E96","#6B978F","#0F9AD7"],"index":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],"value":[3,2,4,4,2,4,4,8,3,2,2,6,1,2,2,1,7,2,6,4,1,7]},"selected":{"id":"56238"},"selection_policy":{"id":"56239"}},"id":"56225","type":"ColumnDataSource"},{"attributes":{"end_angle":{"expr":{"id":"56224"}},"fill_alpha":{"value":0.1},"fill_color":{"field":"color"},"line_alpha":{"value":0.1},"line_color":{"value":"white"},"radius":{"value":0.4},"start_angle":{"expr":{"id":"56223"}},"x":{"value":0},"y":{"value":1}},"id":"56228","type":"Wedge"},{"attributes":{},"id":"56238","type":"Selection"},{"attributes":{},"id":"56234","type":"BasicTickFormatter"},{"attributes":{},"id":"56237","type":"BasicTickFormatter"},{"attributes":{"callback":null,"tooltips":"@Historians: @value"},"id":"56220","type":"HoverTool"},{"attributes":{"start":-0.5},"id":"56204","type":"Range1d"},{"attributes":{},"id":"56232","type":"AllLabels"},{"attributes":{},"id":"56235","type":"AllLabels"},{"attributes":{},"id":"56206","type":"DataRange1d"},{"attributes":{"source":{"id":"56225"}},"id":"56230","type":"CDSView"},{"attributes":{"background_fill_alpha":0.25,"background_fill_color":"#20262B","border_line_alpha":0,"glyph_width":15,"items":[{"id":"56241"}],"label_standoff":8,"label_text_color":"#E0E0E0","label_text_font":"Helvetica","label_text_font_size":"1.025em","spacing":8},"id":"56240","type":"Legend"},{"attributes":{"background_fill_color":"#20262B","below":[{"id":"56212"}],"border_fill_color":"#15191C","center":[{"id":"56215"},{"id":"56219"},{"id":"56240"}],"height":700,"left":[{"id":"56216"}],"outline_line_alpha":0.25,"outline_line_color":"#E0E0E0","renderers":[{"id":"56229"}],"title":{"id":"56202"},"toolbar":{"id":"56221"},"toolbar_location":null,"x_range":{"id":"56204"},"x_scale":{"id":"56208"},"y_range":{"id":"56206"},"y_scale":{"id":"56210"}},"id":"56201","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"56210","type":"LinearScale"},{"attributes":{},"id":"56208","type":"LinearScale"},{"attributes":{},"id":"56213","type":"BasicTicker"},{"attributes":{"field":"angle"},"id":"56224","type":"CumSum"},{"attributes":{},"id":"56239","type":"UnionRenderers"},{"attributes":{"axis_label":null,"axis_label_standoff":10,"axis_label_text_color":"#E0E0E0","axis_label_text_font":"Helvetica","axis_label_text_font_size":"1.25em","axis_label_text_font_style":"normal","axis_line_alpha":0,"axis_line_color":"#E0E0E0","formatter":{"id":"56237"},"major_label_policy":{"id":"56235"},"major_label_text_color":"#E0E0E0","major_label_text_font":"Helvetica","major_label_text_font_size":"1.025em","major_tick_line_alpha":0,"major_tick_line_color":"#E0E0E0","minor_tick_line_alpha":0,"minor_tick_line_color":"#E0E0E0","ticker":{"id":"56213"},"visible":false},"id":"56212","type":"LinearAxis"},{"attributes":{"axis":{"id":"56216"},"dimension":1,"grid_line_alpha":0.25,"grid_line_color":null,"ticker":null},"id":"56219","type":"Grid"},{"attributes":{"field":"angle","include_zero":true},"id":"56223","type":"CumSum"},{"attributes":{"axis_label":null,"axis_label_standoff":10,"axis_label_text_color":"#E0E0E0","axis_label_text_font":"Helvetica","axis_label_text_font_size":"1.25em","axis_label_text_font_style":"normal","axis_line_alpha":0,"axis_line_color":"#E0E0E0","formatter":{"id":"56234"},"major_label_policy":{"id":"56232"},"major_label_text_color":"#E0E0E0","major_label_text_font":"Helvetica","major_label_text_font_size":"1.025em","major_tick_line_alpha":0,"major_tick_line_color":"#E0E0E0","minor_tick_line_alpha":0,"minor_tick_line_color":"#E0E0E0","ticker":{"id":"56217"},"visible":false},"id":"56216","type":"LinearAxis"},{"attributes":{"axis":{"id":"56212"},"grid_line_alpha":0.25,"grid_line_color":null,"ticker":null},"id":"56215","type":"Grid"},{"attributes":{},"id":"56217","type":"BasicTicker"},{"attributes":{"active_multi":null,"tools":[{"id":"56220"}]},"id":"56221","type":"Toolbar"}],"root_ids":["56201"]},"title":"Bokeh Application","version":"2.3.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('56332').textContent;
+                  var render_items = [{"docid":"4f08dc29-d525-493b-8721-549f863ab2b8","root_ids":["56201"],"roots":{"56201":"a995cf24-9bf0-44ae-a902-4fafd2e5c349"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

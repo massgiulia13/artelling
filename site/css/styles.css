@@ -572,6 +572,8 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  margin-left: 0;
+  margin-right:5%;
 }
 
 .img-thumbnail {
@@ -1139,6 +1141,7 @@ progress {
   .col-md-4 {
     flex: 0 0 auto;
     width: 33.3333333333%;
+    margin-left: 5%;
   }
 
   .col-md-5 {
@@ -1149,6 +1152,7 @@ progress {
   .col-md-6 {
     flex: 0 0 auto;
     width: 50%;
+    margin-left: 5%;
   }
 
   .col-md-7 {
@@ -6907,6 +6911,8 @@ textarea.form-control-lg {
 
 .align-items-center {
   align-items: center !important;
+  align-items: center !important;
+  margin-left: 0.5%;
 }
 
 .align-items-baseline {
@@ -7561,7 +7567,7 @@ textarea.form-control-lg {
 }
 
 .text-black-50 {
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(0, 0, 0, 0) !important;
 }
 
 .text-white-50 {
